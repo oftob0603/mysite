@@ -7,7 +7,7 @@ Auditoriya: mashina sotib olmoqchi yoki sotmoqchi bo'lgan oddiy foydalanuvchilar
 
 ## Uslub qoidalari
 - Taassurot: ishonchli, yorqin, luks — lekin dabdabasiz.
-- Rang palitrasi: krem/och fon + moviy panel (kunduzgi), qorong'i fon + oltin rang (tungi). Yangi rang qo'shishdan oldin so'rab ol.
+- Rang palitrasi: yagona qora fon (`#0d0d0d`) + qizil urg'u rangi (`#d7263d`). Kun/tun rejimi yo'q — sayt doim shu uslubda. Faqat mashina rasmi (hero) atayin och rangli "foto romka"da ko'rsatiladi (rasmning oq foni bilan uyg'un bo'lishi uchun). Yangi rang qo'shishdan oldin so'rab ol.
 - Ohang: qisqa, aniq, samimiy o'zbek tili. Ortiqcha marketing so'zlaridan qoch.
 - Oddiylik ustuvor: har bir yangi blok "kerakmi?" degan savoldan o'tishi kerak. Ortiqcha bezak, animatsiya yoki bo'limlar qo'shma.
 
