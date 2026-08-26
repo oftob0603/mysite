@@ -9,12 +9,21 @@
 </head>
 <body>
   <div class="page">
-    <div class="topbar">
-      <div class="logo">AVTO<span>ULOV</span></div>
-      <button type="button" class="theme-btn" id="themeToggle" aria-label="Mavzuni almashtirish">&#9728;</button>
+    <div class="site-header">
+      <div class="topbar">
+        <div class="logo">AVTO<span>ULOV</span></div>
+        <button type="button" class="theme-btn" id="themeToggle" aria-label="Mavzuni almashtirish">&#9728;</button>
+      </div>
+      <nav class="nav-links">
+        <a href="#bosh">Bosh</a>
+        <a href="#ishlarim">Xizmatlar</a>
+        <a href="#fikrlar">Mijozlar fikri</a>
+        <a href="#savol-javob">Savol-javob</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
     </div>
 
-    <div class="hero">
+    <div class="hero" id="bosh">
       <div class="hero-left">
         <h1>Mashina sotib olish va sotish endi oson.</h1>
         <p class="tagline">Har kuni yangi e'lonlar — sifatli, tekshirilgan va halol narxlarda. Ishonchli xaridorlar va sotuvchilar bir joyda.</p>
@@ -25,7 +34,68 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="ishlarim">
+      <div class="section-title">Xizmatlarimiz</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Ekspertiza</h3>
+          <p>Mashinani sotib olishdan oldin professional tekshirib beramiz.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📄</div>
+          <h3>Hujjatlashtirish</h3>
+          <p>Oldi-sotdi hujjatlarini to'g'ri va tez rasmiylashtiramiz.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚚</div>
+          <h3>Yetkazib berish</h3>
+          <p>Kerak bo'lsa, mashinani manzilingizgacha yetkazib beramiz.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="fikrlar">
+      <div class="section-title">Mijozlar fikri</div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-quote">"Mashinani tez va muammosiz sotib oldim, hammasi kelishilganidek bo'ldi."</p>
+          <p class="review-author">— Sardor</p>
+        </div>
+        <div class="review-card">
+          <p class="review-quote">"Sotuvchi bilan bevosita gaplashish qulay, vaqt yo'qotmadim."</p>
+          <p class="review-author">— Dilnoza</p>
+        </div>
+        <div class="review-card">
+          <p class="review-quote">"Hujjatlar bilan yordam berishdi, ancha osonlashdi."</p>
+          <p class="review-author">— Javlon</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="savol-javob">
+      <div class="section-title">Savol-javob</div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>To'lovni qanday amalga oshiraman?</summary>
+          <p>Naqd yoki bank o'tkazmasi orqali, sotuvchi bilan kelishilgan holda.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Mashina tekshirilganmi, kafolat bormi?</summary>
+          <p>Sotib olishdan oldin shaxsan ko'rib chiqishni tavsiya qilamiz; ekspertiza xizmatidan foydalanishingiz mumkin.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Mashinani yetkazib berasizlarmi?</summary>
+          <p>Ha, kerak bo'lsa manzilga yetkazib berish xizmati mavjud.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Hujjatlarni rasmiylashtirishga yordam berasizlarmi?</summary>
+          <p>Ha, oldi-sotdi hujjatlarini rasmiylashtirishda yordam beramiz.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="section" id="aloqa">
       <div class="section-title">Aloqa</div>
       <div class="contact-row">
         <a href="tel:+998900000000" class="btn-outline">Qo'ng'iroq</a>

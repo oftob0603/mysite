@@ -13,6 +13,7 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+.claude/
 
 # Vaqtinchalik / log fayllar
 *.log

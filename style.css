@@ -23,6 +23,7 @@
     --btn-text:#161616;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
   body{
     font-family:'Segoe UI',Tahoma,Arial,sans-serif;
     background:var(--cream);
@@ -35,12 +36,25 @@
     padding:20px;
   }
 
+  /* sticky header */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--cream);
+    margin:0 -20px;
+    padding:0 20px;
+    border-bottom:1px solid var(--border);
+  }
+  .section{scroll-margin-top:96px;}
+  #bosh{scroll-margin-top:96px;}
+
   /* top bar */
   .topbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:6px 4px 20px;
+    padding:6px 4px 14px;
   }
   .logo{
     font-size:20px;
@@ -62,6 +76,22 @@
     font-size:18px;
     box-shadow:0 2px 8px var(--shadow);
   }
+
+  /* nav links */
+  .nav-links{
+    display:flex;
+    gap:22px;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding:0 4px 14px;
+  }
+  .nav-links a{
+    color:var(--muted);
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+  }
+  .nav-links a:hover{color:var(--ink);}
 
   /* hero */
   .hero{
@@ -188,6 +218,96 @@
     color:var(--ink);
     font-size:15px;
     white-space:nowrap;
+  }
+
+  /* services */
+  .services-grid{
+    display:flex;
+    gap:16px;
+  }
+  .service-card{
+    flex:1;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:24px 18px;
+    text-align:center;
+    box-shadow:0 4px 14px rgba(0,0,0,0.04);
+  }
+  .service-icon{
+    width:52px;
+    height:52px;
+    margin:0 auto 14px;
+    border-radius:50%;
+    background:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+  }
+  .service-card h3{
+    font-size:16px;
+    margin-bottom:6px;
+  }
+  .service-card p{
+    font-size:13px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+
+  /* reviews */
+  .reviews-grid{
+    display:flex;
+    gap:16px;
+  }
+  .review-card{
+    flex:1;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.04);
+  }
+  .review-quote{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:12px;
+  }
+  .review-author{
+    font-size:13px;
+    color:var(--muted);
+    font-weight:700;
+  }
+
+  /* faq */
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .faq-item{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:16px 18px;
+  }
+  .faq-item summary{
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+  }
+  .faq-item p{
+    margin-top:10px;
+    font-size:14px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+
+  @media (max-width:680px){
+    .services-grid,
+    .reviews-grid{
+      flex-direction:column;
+    }
   }
 
   /* contact */
