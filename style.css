@@ -93,6 +93,14 @@
   }
   .nav-links a:hover{color:var(--ink);}
 
+  @media (max-width:480px){
+    .nav-links{
+      gap:14px;
+      font-size:13px;
+    }
+    .nav-links a{font-size:13px;}
+  }
+
   /* hero */
   .hero{
     display:flex;
