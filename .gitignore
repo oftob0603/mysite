@@ -1,0 +1,19 @@
+# Maxfiy ma'lumotlar
+.env
+.env.*
+*.key
+*.pem
+
+# OS fayllari
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Muharrir/IDE fayllari
+.vscode/
+.idea/
+*.swp
+
+# Vaqtinchalik / log fayllar
+*.log
+*.tmp
