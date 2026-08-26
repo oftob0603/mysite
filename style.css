@@ -114,6 +114,11 @@
     font-weight:800;
     line-height:1.15;
     margin-bottom:18px;
+    animation:fadeInUp .5s ease both;
+  }
+  @keyframes fadeInUp{
+    from{opacity:0; transform:translateY(14px);}
+    to{opacity:1; transform:translateY(0);}
   }
   .hero-left .tagline{
     font-size:15px;
@@ -233,6 +238,11 @@
     padding:24px 18px;
     text-align:center;
     box-shadow:0 4px 14px rgba(0,0,0,0.04);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .service-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,0.09);
   }
   .service-icon{
     width:52px;
@@ -267,6 +277,11 @@
     border-radius:16px;
     padding:20px;
     box-shadow:0 4px 14px rgba(0,0,0,0.04);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .review-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,0.09);
   }
   .review-quote{
     font-size:14px;
@@ -289,15 +304,43 @@
     background:var(--white);
     border:1px solid var(--border);
     border-radius:14px;
-    padding:16px 18px;
+    padding:4px 18px;
   }
-  .faq-item summary{
+  .faq-question{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    background:none;
+    border:none;
+    text-align:left;
+    font-family:inherit;
     font-weight:700;
     font-size:15px;
+    color:var(--ink);
     cursor:pointer;
+    padding:16px 0;
   }
-  .faq-item p{
-    margin-top:10px;
+  .faq-icon{
+    flex-shrink:0;
+    color:var(--muted);
+    font-weight:400;
+    transition:transform .2s ease;
+  }
+  .faq-item.open .faq-icon{
+    transform:rotate(45deg);
+  }
+  .faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-item.open .faq-answer{
+    max-height:200px;
+  }
+  .faq-answer p{
+    padding-bottom:16px;
     font-size:14px;
     color:var(--muted);
     line-height:1.6;
@@ -340,4 +383,25 @@
     color:var(--muted);
     font-size:12px;
     margin:40px 0 10px;
+  }
+
+  /* scroll reveal */
+  .reveal{
+    opacity:0;
+    transform:translateY(16px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .reveal.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* harakatni kamaytirish */
+  @media (prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+      animation-duration:.001ms !important;
+      transition-duration:.001ms !important;
+    }
   }
